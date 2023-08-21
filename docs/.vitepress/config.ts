@@ -3,10 +3,17 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '丿一盏孤灯丿的Blog',
-  outDir: '../dist',
+  // outDir: '../dist',
+  lastUpdated: true,
+  head: [
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/logo.svg` }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.svg',
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: '笔记', items: [
         {
@@ -42,6 +49,11 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' },
         ],
       },
-    ]
+    ],
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    lastUpdatedText: '更新时间',
   },
 })
