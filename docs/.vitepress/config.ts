@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '丿一盏孤灯丿的Blog',
-  // outDir: '../dist',
+  outDir: '../dist',
   lastUpdated: true,
   head: [
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/logo.svg` }]
