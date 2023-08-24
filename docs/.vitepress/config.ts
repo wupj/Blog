@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import getSidebar from './sidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,21 +20,21 @@ export default defineConfig({
         {
           text: '基础',
           items: [
-            { text: 'JavaScript', link: 'base/javaScript/index' },
-            { text: 'CSS', link: 'base/css/index' },
-            { text: 'HTML', link: 'base/html/index' }
+            { text: 'JavaScript', link: 'note/base/javaScript/index' },
+            { text: 'CSS', link: 'note/base/css/index' },
+            { text: 'HTML', link: 'note/base/html/index' }
           ]
         },
         {
           text: '前端框架',
           items: [
-            { text: 'Vue', link: 'framework/vue/index' },
-            { text: 'React', link: 'framework/react/index' }
+            { text: 'Vue', link: 'note/framework/vue/index' },
+            { text: 'React', link: 'note/framework/react/index' }
           ]
         },
         {
           text: '前端可视化',
-          link: '/chart/index'
+          link: 'note/chart/index'
         },
       ]},
       
@@ -41,15 +42,10 @@ export default defineConfig({
       { text: 'GitHub', link: 'https://github.com/wupj' }
     ],
 
-    sidebar: [
-      {
-        text: '基础',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
-      },
-    ],
+    sidebar: {
+      '/note/': getSidebar('docs', 'note'),
+      '/interview/': getSidebar('docs', 'interview')
+    },
     docFooter: {
       prev: '上一页',
       next: '下一页'
