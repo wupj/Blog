@@ -1,5 +1,6 @@
 import { readdirSync, statSync } from 'fs'
-import { join } from 'path'
+import { join, sep } from 'path'
+import * as console from "console";
 
 const replaceMap = {
     base: '基础',
@@ -7,6 +8,8 @@ const replaceMap = {
     framework: '前端框架',
     interview: '面试',
 }
+
+const rootPath = 'docs'
 
 const getSidebar = (startPath: string, targetPath: string) => {
     const sidebar = []
@@ -22,9 +25,12 @@ const getSidebar = (startPath: string, targetPath: string) => {
                 items: getSidebar(wherePath, item),
             })
         } else {
+            let linkList = fullPath.split(sep)
+            if (linkList.includes(rootPath)) linkList.shift()
+            const linkPath = linkList.join(sep)
             sidebar.push({
                 text: item.replace('.md', ''),
-                link: fullPath.replace('.md', ''),
+                link: linkPath.replace('.md', ''),
             })
         }
     })

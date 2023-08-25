@@ -21,7 +21,7 @@ export default defineConfig({
           text: '基础',
           items: [
             { text: 'JavaScript', link: 'note/base/javaScript/index' },
-            { text: 'CSS', link: 'note/base/css/index' },
+            { text: 'CSS', link: 'note/base/css/css事件冒泡' },
             { text: 'HTML', link: 'note/base/html/index' }
           ]
         },
@@ -47,8 +47,8 @@ export default defineConfig({
       '/interview/': getSidebar('docs', 'interview')
     },
     docFooter: {
-      prev: '上一页',
-      next: '下一页'
+      prev: '上一篇',
+      next: '下一篇'
     },
     lastUpdatedText: '更新时间',
   },
