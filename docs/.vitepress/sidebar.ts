@@ -6,6 +6,7 @@ const replaceMap = {
     base: '基础',
     chart: '前端可视化',
     framework: '前端框架',
+    other: '其他',
     interview: '面试',
 }
 

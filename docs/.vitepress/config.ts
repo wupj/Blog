@@ -28,7 +28,7 @@ export default defineConfig({
         {
           text: '前端框架',
           items: [
-            { text: 'Vue', link: 'note/framework/vue/index' },
+            { text: 'Vue', link: 'note/framework/vue/vue cli配置开发环境下的sourcemap' },
             { text: 'React', link: 'note/framework/react/index' }
           ]
         },
