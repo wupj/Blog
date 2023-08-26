@@ -20,7 +20,7 @@ export default defineConfig({
         {
           text: '基础',
           items: [
-            { text: 'JavaScript', link: 'note/base/javaScript/index' },
+            { text: 'JavaScript', link: 'note/base/javaScript/JSON.stringify用法' },
             { text: 'CSS', link: 'note/base/css/css事件冒泡' },
             { text: 'HTML', link: 'note/base/html/index' }
           ]
