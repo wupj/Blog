@@ -7,5 +7,5 @@ hero:
   actions:
     - theme: brand
       text: 快速开始 →
-      link: /base/javaScript/index
+      link: /note/base/javaScript/JSON stringify用法
 
