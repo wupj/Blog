@@ -1,7 +1,7 @@
 # react路由传参方式
 
 ## params
-```
+```typescript jsx
     <Route path="/list/:id" component={List} />
     <Link to="/list/2">跳转页面</Link>
     //页面跳转
@@ -15,10 +15,10 @@
 > 缺点：传值太多不方便而且url会变的很长
 
 ## state
-```
+```typescript jsx
     <Route path="/sort" component={Sort} />
     <Link to={{ path: '/sort' , state: { name : 'sunny' }}}> 
-    this.props.history.push({pathname: '/sort', state: { name : 'sunny' }})
+    this.props.history.push({ pathname: '/sort', state: { name : 'sunny' }})
     //读取参数
     this.props.location.query.state
 ```
@@ -28,10 +28,10 @@
 > 缺点：使用HashRouter的话，刷新页面，参数会丢失
 
 ## search
-```
+```typescript jsx
     <Route path="/web/departManange" component={DepartManange} />
-    <link to="web/departManange?tenantId=12121212">xxx</Link>
-    this.props.history.push({pathname: `/web/departManange?tenantId=${row.tenantId}`})
+    <link to="web/departManange?tenantId=12121212">xxx</link>
+    this.props.history.push({ pathname: `/web/departManange?tenantId=${row.tenantId}`})
     // 读取参数
     this.props.location.search
 ```
@@ -41,10 +41,10 @@
 > 缺点：传值太多url也会变的很长
 
 ## query
-```
+```typescript jsx
     <Route path='/query' component={Query} />
-    <Link to={{ path : ' /query' , query : { name : 'sunny' }}}>
-    this.props.history.push({pathname: '/query', query: { name : 'sunny' }})
+    <Link to={{ path: '/query' , query: { name : 'sunny' }}}>
+    this.props.history.push({ pathname: '/query', query: { name : 'sunny' }})
     //读取参数用
     this.props.location.query.name
 ```

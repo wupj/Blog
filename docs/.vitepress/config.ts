@@ -16,7 +16,9 @@ export default defineConfig({
       provider: 'local'
     },
     nav: [
-      { text: '笔记', items: [
+      {
+        text: '笔记',
+        items: [
         {
           text: '基础',
           items: [
@@ -29,7 +31,7 @@ export default defineConfig({
           text: '前端框架',
           items: [
             { text: 'Vue', link: 'note/framework/vue/vue cli配置开发环境下的sourcemap' },
-            { text: 'React', link: 'note/framework/react/index' }
+            { text: 'React', link: 'note/framework/react/create-react-app build打包隐藏源码' }
           ]
         },
         {
@@ -37,7 +39,6 @@ export default defineConfig({
           link: 'note/chart/index'
         },
       ]},
-      
       { text: '面试题', link: '/interview/index' },
       { text: 'GitHub', link: 'https://github.com/wupj' }
     ],
