@@ -36,7 +36,7 @@ export default defineConfig({
         },
         {
           text: '前端可视化',
-          link: 'note/chart/index'
+          link: 'note/chart/echarts geo地图坐标转换为页面Offset坐标'
         },
       ]},
       { text: '面试题', link: '/interview/index' },
