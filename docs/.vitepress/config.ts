@@ -48,8 +48,8 @@ export default defineConfig({
       '/interview/': getSidebar('docs', 'interview')
     },
     docFooter: {
-      prev: '上一篇',
-      next: '下一篇'
+      prev: false,
+      next: false
     },
     lastUpdatedText: '更新时间',
   },
