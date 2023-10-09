@@ -24,7 +24,7 @@ export default defineConfig({
           items: [
             { text: 'JavaScript', link: 'note/base/javaScript/JSON stringify用法' },
             { text: 'CSS', link: 'note/base/css/css事件冒泡' },
-            { text: 'HTML', link: 'note/base/html/index' }
+            { text: 'HTML', link: 'note/base/html/a标签设置锚点，url不显示锚点' }
           ]
         },
         {
