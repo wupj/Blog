@@ -9,6 +9,7 @@ const replaceMap = {
     'ui-library': 'UI库',
     antd: 'Ant Design',
     'element ui': 'Element UI',
+    'element plus': 'Element Plus',
     other: '其他',
     interview: '面试',
 }
