@@ -10,6 +10,7 @@ const replaceMap = {
     antd: 'Ant Design',
     'element ui': 'Element UI',
     'element plus': 'Element Plus',
+    'micro-front-end': '微前端',
     other: '其他',
     interview: '面试',
 }
