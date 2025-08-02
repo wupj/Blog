@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.0.0-rc.4"
+    "vitepress": "1.6.3"
   },
   "dependencies": {
-    "@types/node": "^20.5.4"
+    "@types/node": "^24.1.0"
   }
 }
