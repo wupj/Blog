@@ -1,4 +1,4 @@
-## el-upload h5浏览器上传图片调用相机
+# el-upload h5浏览器上传图片调用相机
 
 使用 HTML 属性capture
 
